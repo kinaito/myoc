@@ -1,0 +1,79 @@
+.DS_Store
+.venv/
+.worktrees/
+__pycache__/
+*.pyc
+build/
+dist/
+_nuitka_build/
+logs/
+*.spec
+
+# Local AI Vault
+.ai/VAULT.md
+
+# Packaging installers (产品按版本子目录 release/vX.Y.Z/{mac,win}/ 落盘)
+release/
+
+# macOS app bundle 编译残留
+*.app
+
+# Scratch / backup
+scratch/
+*.zip
+live2d_editor_v2.0_backup.zip
+settings/
+
+# 运营工具测试残留
+.uploads/
+
+# TRAE 临时共享包（文档已移入 docs/）
+.trae-html-share-packages/
+
+# 模型文件（不属于代码）
+model_Live2D/
+
+# 根目录散落残留（需手动删除）
+zip_backup.py
+
+# 敏感配置（含凭证）
+data/supabase_config.json
+
+# AI agent config (not for public repo)
+.ai/
+.agents/
+.traae/
+.superpowers/
+
+# UI design assets (large binary files)
+myoc-ui-design/
+
+# Cache and temp
+cache/
+*.tmp
+tmp_*.py
+
+# Screenshots and test artifacts
+screenshot_*.png
+screenshot_*.jpg
+
+# Temp scripts
+start.sh
+tmp_auto_screenshot.py
+
+# Server deployment (sensitive)
+server/.wrangler/
+server/node_modules/
+data/supabase_config.json
+
+# Remote config (contains API URLs)
+remote_config.json
+
+# Settings (user-specific)
+settings/
+
+# SDK (third-party)
+sdk/
+server/wrangler.toml
+server/package-lock.json
+docs/model-db-config.md
