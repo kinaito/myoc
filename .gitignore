@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.spec
+*.zip
+*.pkg
+release/*
+!release/.gitkeep
+
+# 仅做发布仓保留，源码在私有仓库
+src/
+packaging/
+
